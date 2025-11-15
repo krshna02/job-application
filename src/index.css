@@ -1,14 +1,10 @@
-/* ===============================
-   GLOBAL PAGE STYLING
-================================ */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;              
-  background: #303031ff;     /* your dark background */
+  background: #303031ff;    
 }
 /* ---------- PARENT CONTAINER ---------- */
-/* Parent takes full height of body + expands if content grows */
 .parent {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
