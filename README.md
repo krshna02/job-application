@@ -1,16 +1,64 @@
-# React + Vite
+📌 Job Openings React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based Job Listing UI featuring elegant glassmorphism cards, responsive layout, pagination, and real company data.
+Users can browse job openings, view details at a glance, and explore opportunities through a minimal and clean design.
 
-Currently, two official plugins are available:
+🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 View Live Project: https://job-application-blush.vercel.app/
 
-## React Compiler
+🎯 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🧊 Glassmorphism UI – Soft blur, transparency & smooth shadows
 
-## Expanding the ESLint configuration
+🗂️ Dynamic Job Cards – Loaded from a JS data array
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📱 Responsive Layout – Fully adjusts to all screen sizes
+
+➕ More Real Companies Added
+
+⚡ Fast Rendering with React
+
+🖼️ Company Logos pulled from official sources
+
+🔍 Clean and simple code structure
+
+🛠️ Tech Stack
+
+React.js (Functional Components)
+
+CSS3 (Glassmorphism theme)
+
+JavaScript (ES6+)
+
+Vite (for fast development & build)
+
+📁 Project Structure
+job-app/
+│── src/
+│   ├── components/
+│   │   └── Cards.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+│── public/
+│── package.json
+│── vite.config.js
+│── README.md
+
+🚀 Getting Started
+1️⃣ Clone the Repo
+git clone https://github.com/your-username/job-openings-app.git
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Run Development Server
+npm run dev
+
+4️⃣ Build for Production
+npm run build
+
+5️⃣ Preview Production Build
+npm run preview
