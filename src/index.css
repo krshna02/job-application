@@ -1,0 +1,186 @@
+/* ===============================
+   GLOBAL PAGE STYLING
+================================ */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;              
+  background: #303031ff;     /* your dark background */
+}
+/* ---------- PARENT CONTAINER ---------- */
+/* Parent takes full height of body + expands if content grows */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
+  background: #303031ff;
+  min-height: 100vh;
+}
+/* ===============================
+   CARD — GLASSMORPHISM
+================================ */
+.card {
+  width: 300px;
+  min-height: 340px;
+  border-radius: 20px;
+
+  /* GLASS EFFECT */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+/* ===============================
+   TOP SECTION
+================================ */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.top img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: cover;
+ 
+}
+
+.top button {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
+
+.top button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* ===============================
+   CENTER SECTION
+================================ */
+.center {
+  padding: 18px 20px;
+  flex: 1;
+}
+
+.center h3 {
+  font-size: 14px;
+  color: #ddd;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.center h3 span {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-left: 8px;
+  font-size: 11px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.center h2 {
+  margin: 10px 0;
+  font-size: 19px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.center div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.center h4 {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  backdrop-filter: blur(8px);
+}
+
+/* ===============================
+   BOTTOM SECTION
+================================ */
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 16px 20px;
+  margin-top: auto;
+}
+
+.bottom > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom h3 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.bottom p {
+  font-size: 13px;
+  color: #ddd;
+}
+
+.bottom button {
+  background: rgba(0, 102, 255, 0.45);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+}
+
+.bottom button:hover {
+  background: rgba(0, 102, 255, 0.65);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
